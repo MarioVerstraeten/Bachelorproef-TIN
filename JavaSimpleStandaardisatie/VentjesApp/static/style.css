@@ -1,0 +1,249 @@
+
+.container{
+    max-width: 90%;
+}
+
+#can {
+    width: 100%;
+    height: 100%;
+    border:2px solid;
+    padding: 0px;
+    display: inline-block;
+  }
+
+#CanvasPaddingWrapper{
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.upperBound{
+    max-height: 700px;
+}
+
+#EmotionsDiv{
+    max-height: 500px;
+    padding-top: 3%;
+    padding-bottom: 10%;
+}
+
+#ResultWindow{
+    padding-top: 3%;
+    padding-bottom: 10%;
+}
+.addPadding{
+    padding-bottom: 1%;
+    max-width: 100%;
+}
+
+
+
+
+.ui.dropdown{
+    text-align: center;
+}
+
+#circle10 {
+    background: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+#circle20 {
+    background: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+#circle30 {
+    background: black;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.omschrijving{
+    margin-top: -30%;
+    margin-bottom: 30%;
+}
+
+
+
+.ui.dropdown .menu>.item{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.maakFlex{
+    display: flex;           /* establish flex container */
+    flex-direction: column;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
+}
+
+.emoji-image{
+    padding: 20% 20% 20% 20%;
+    margin-top: -10%;
+    margin-bottom: 10%;
+}
+
+
+.simpel-emoji-image{
+    padding: 15% 15% 15% 15%;
+}
+
+.emotie-wrapper{
+    max-height:10%
+}
+
+.slider.slider-horizontal{
+    width: 80%;
+}
+
+.blank-wrapper{
+    max-height:12.5%;
+}
+
+/*Bug die anders niet te fixen valt. Met Jqeury dit dynamisch doen lukt niet*/
+.slider-tick.in-selection {
+    background: black;
+    
+}
+
+.slider-selection{
+    background: black;
+}
+.slider-handle{
+    background: black;
+}
+.in-selection{
+    background: black;
+}
+.slider-selection.tick-slider-selection{
+    background: black;
+}
+
+
+/*     $("#"+key+"Slider .slider-selection").css("cssText","background:"+value);
+     $("#"+key+"Slider .slider-handle").css("cssText","background:"+value);
+     $("#"+key+"Slider .in-selection").css("cssText","background:"+value);
+     $("#"+key+"Slider .slider-tick.in-selection").css("cssText","background:"+value);*/
+
+.no-padding{
+    padding: 0%;
+}
+.borderRadius-wrap{
+    border-radius: 20%;
+}
+
+#gom{
+    width: 100%;
+    margin-right: 15px;
+    margin-left: -15px;
+}
+
+
+/* Sweep To Right */
+.hvr-sweep-to-right {
+
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  .hvr-sweep-to-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: lightgrey;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+  /* Outline Out */
+.hvr-outline-out {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+  }
+  .hvr-outline-out:before {
+    content: '';
+    position: absolute;
+    border: black solid 4px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: top, right, bottom, left;
+    transition-property: top, right, bottom, left;
+  }
+  .hvr-outline-out:hover:before, .hvr-outline-out:focus:before, .hvr-outline-out:active:before {
+    top: -4px;
+    right: -4px;
+    bottom: -4px;
+    left: -4px;
+    /*or: -8px*/
+  }
+
+  /* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    cursor:pointer;
+  }
+  .hvr-grow.is-active{
+    -webkit-transform: scale(1.25);
+    transform: scale(1.20);
+    border: black solid 8px;
+}
+
+html {
+    background-color: #ffffff;
+    /* Or any color / image you want */
+}
